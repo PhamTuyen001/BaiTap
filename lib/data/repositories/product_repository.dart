@@ -11,7 +11,6 @@ class ProductRepository {
   void updateApiRequest(ApiRequest apiRequest) {
     _apiRequest = apiRequest;
   }
-
   Future<AppResource<List<ProductDTO>>> getProducts() async{
     Completer<AppResource<List<ProductDTO>>> completer = Completer();
     try {
